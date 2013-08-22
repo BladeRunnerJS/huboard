@@ -131,6 +131,38 @@
       @include prefixer(filter, grayscale(100%) opacity(80%));
       @include box-shadow(inset 0 0px 1px rgba(0,0,0, 0.3));
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+      padding-bottom: 5px;
+
+      .ui-icon {
+        display: none;
+      }
+
+      .title {
+        padding-right: 40px;
+        font-size: 0.8em;
+        line-height: 1.1em;
+      }
+
+      .milestone {
+        display: none;
+      }
+
+      .card-header {
+        border-bottom: none;
+
+        .number {
+          top: 0;
+          font-size: 1em;
+        }
+      }
+
+      img {
+        /* avatar */
+        height: 1em;
+        left: 93%;
+      }
+
     }
     .active {
     }
@@ -309,7 +341,7 @@
     background-color:#efefef;
   }
 
-  .dim:hover, .active:hover { 
+  .active:hover { 
     .ui-icon {
       display:inline;
     }
